@@ -9,7 +9,7 @@ st.caption("Test versiyasi")
 # ================== API KEY (To'g'ridan-to'g'ri yozamiz) ==================
 API_KEY = "AIzaSy..."   # ← BU YERGA O'ZINGIZNING YANGI API KEY'INGIZNI QO'YING
 
-if not API_KEY or API_KEY == "AIzaSy...":
+if not API_KEY or API_KEY == "AQ.Ab8RN6JnfdoFii2P8_IsGm1DVjH0339bh6Emx-5MGi5ZDm5kqw":
     st.error("API Key ni kodga yozing!")
     st.stop()
 
