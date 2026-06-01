@@ -55,14 +55,6 @@ ko'rinishida qisqa tahlil yozing.
 
 # Model
 
-
-# Streamlit secrets'dan kalitni yuklab olish
-if "GEMINI_API_KEY" in st.secrets:
-    genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-else:
-    st.error("API kaliti topilmadi! .streamlit/secrets.toml faylini tekshiring.")
-
-# Modelni sozlash (Eslatma: Gemini-1.5-Flash modelidan foydalaning)
 model = genai.GenerativeModel('gemini-1.5-flash')
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
