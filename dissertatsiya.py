@@ -55,10 +55,15 @@ ko'rinishida qisqa tahlil yozing.
 """
 
 # Model
-model = genai.GenerativeModel(
-    model_name="gemini-2.5-flash",
-    system_instruction=system_instruction
-)
+try:
+    test_mode = 
+    genai.GenerativeModel("gemini-1.5-flash")
+    test=
+    test_model.generate_content("Salom")
+    st.success("API ishlayapti")
+    except Exception as e: st.error(e)
+    #system_instruction=system_instruction
+
 
 # Chat tarixi
 if "chat_history" not in st.session_state:
