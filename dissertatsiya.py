@@ -56,14 +56,14 @@ ko'rinishida qisqa tahlil yozing.
 
 # Model
 try:
-    test_model= 
-genai.GenerativeModel("gemini-1.5-flash")
-    test=
-test_model.generate_content("Salom")
-    st.success("API ishlayapti")
-except Exception as e: 
-    st.error(e)
-   
+    test_model = genai.GenerativeModel("gemini-1.5-flash")
+    response = test_model.generate_content("Salom")
+
+    st.success("✅ API muvaffaqiyatli ishlayapti!")
+    st.write(response.text)   # Javobni ko'rsatish uchun
+
+except Exception as e:
+    st.error(f"Xatolik yuz berdi: {e}")
 
 
 # Chat tarixi
