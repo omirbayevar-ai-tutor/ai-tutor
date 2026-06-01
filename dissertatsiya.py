@@ -19,7 +19,7 @@ st.caption(
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=GEMINI_API_KEY)
-
+st.write("API topildi:",bool(GEMINI_API_KEY))
 # System Instruction
 system_instruction = """
 Siz maktab o'quvchilari uchun informatika fani bo'yicha super-adaptiv va psixolog-mentorsiz.
