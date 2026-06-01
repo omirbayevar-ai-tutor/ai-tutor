@@ -16,7 +16,7 @@ st.caption(
 )
 
 # API kaliti
-GEMINI_API_KEY = "AQ.Ab8RN6KARawHJVugHih65K2NNpMF0kPsl7Q255ZaTU0sWbRqNA"
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 genai.configure(api_key=GEMINI_API_KEY)
 
