@@ -57,12 +57,13 @@ ko'rinishida qisqa tahlil yozing.
 # Model
 try:
     test_mode = 
-    genai.GenerativeModel("gemini-1.5-flash")
+genai.GenerativeModel("gemini-1.5-flash")
     test=
-    test_model.generate_content("Salom")
+test_model.generate_content("Salom")
     st.success("API ishlayapti")
-    except Exception as e: st.error(e)
-    #system_instruction=system_instruction
+except Exception as e: 
+    st.error(e)
+   
 
 
 # Chat tarixi
