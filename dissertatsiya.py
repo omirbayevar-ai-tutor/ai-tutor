@@ -56,7 +56,7 @@ ko'rinishida qisqa tahlil yozing.
 
 # Model
 try:
-    test_model = 
+    test_model= 
 genai.GenerativeModel("gemini-1.5-flash")
     test=
 test_model.generate_content("Salom")
