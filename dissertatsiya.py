@@ -36,7 +36,7 @@ Sizning vazifangiz:
 # Model (Yaxshiroq model tanlash)
 try:
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash-lite",          # yoki "gemini-1.5-flash" sinab ko'ring
+        model_name="gemini-1.5-flash",          # yoki "gemini-1.5-flash" sinab ko'ring
         system_instruction=system_instruction
     )
 except Exception as e:
